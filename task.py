@@ -40,6 +40,7 @@ class Matrix:
 		self.a22 = a22
 
 	def add(self, added ):
+		# function that adds two matrices
 		print ("Adding matrices")
 		return Matrix(self.a11 + added.a11, self.a12 + added.a12, self.a21 + added.a21, self.a22 + added.a22)
 
