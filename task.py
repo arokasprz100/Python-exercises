@@ -47,6 +47,8 @@ class Matrix:
 		print (self.a11, self.a12)
 		print (self.a21, self.a22)
 
+	def calculate_determinant(self):
+		return self.a11 * self.a22 - self.a12 * self.a22 
 
 matrix_1 = Matrix(4,5,6,7)
 matrix_1.print_matrix()
@@ -55,3 +57,5 @@ matrix_2.print_matrix()
 
 matrix_3 = matrix_2.add(matrix_1)
 matrix_3.print_matrix()
+
+print(matrix_3.calculate_determinant())
