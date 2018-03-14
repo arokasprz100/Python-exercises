@@ -37,6 +37,9 @@ class Customer:
 	def input_cash(self, money_to_input):
 		self.money += money_to_input
 
+	def withdraw_cash(self, money_to_withdraw):
+		self.money -= money_to_withdraw
+
 
 
 class Bank:
@@ -47,8 +50,8 @@ class Bank:
 				self.customers.append(i)
 
 	def add_customer(self, added_one):
-		if isinstance(added_one, customer):
-			self.customers.append(i)
+		if isinstance(added_one, Customer):
+			self.customers.append(added_one)
 
 	def print_customers_data(self):
 		print ("Customers of a bank: ")
@@ -102,6 +105,11 @@ if __name__ == "__main__":
 	person5.input_cash(300)
 	person5.print_data()
 
+	person1.withdraw_cash(200)
+	person1.print_data()
+
+	bank1.add_customer(person5)
+	bank1.print_customers_data()
 
 
 
