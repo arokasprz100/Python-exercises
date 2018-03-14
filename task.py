@@ -34,6 +34,9 @@ class Customer:
 			self.money -= money
 			customerB.money +=money
 
+	def input_cash(self, money_to_input):
+		self.money += money_to_input
+
 
 
 class Bank:
@@ -51,6 +54,13 @@ class Bank:
 		print ("Customers of a bank: ")
 		for i in self.customers:
 			i.print_data()
+
+	def handle_transaction(self, customerA, customerB, money):
+		if customerA not in self.customers or customerB not in self.customers:
+			print("We handle only our customers transactions.")
+		else:
+			customerA.transfer_money(customerB, money)
+
 
 
 
@@ -75,6 +85,24 @@ if __name__ == "__main__":
 	person3.print_data()
 
 	bank1.print_customers_data()
+
+
+	person4 = Customer("PersonD", 150000)
+	person5 = Customer("PersonE", -200)
+
+	person4.print_data()
+	person5.print_data()
+
+	bank1.handle_transaction(person1, person4, 0)
+	bank1.handle_transaction(person1, person2, 300)
+
+	bank1.print_customers_data()
+
+
+	person5.input_cash(300)
+	person5.print_data()
+
+
 
 
 
