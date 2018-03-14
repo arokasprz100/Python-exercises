@@ -18,3 +18,64 @@
 #Your program must be runnable with command "python task.py".
 #Show some usecases of your library in the code (print some things)
 #Good Luck
+
+
+
+class Customer:
+	def __init__ (self, name = "Nobody", money = 0.0):
+		self.name = name
+		self.money = money
+
+	def print_data(self):
+		print (self.name, "has", self.money)
+
+	def transfer_money(self, customerB, money):
+		if isinstance(customerB, Customer):
+			self.money -= money
+			customerB.money +=money
+
+
+
+class Bank:
+	def __init__ (self, *args):
+		self.customers = []
+		for i in args:
+			if isinstance(i, Customer):
+				self.customers.append(i)
+
+	def add_customer(self, added_one):
+		if isinstance(added_one, customer):
+			self.customers.append(i)
+
+	def print_customers_data(self):
+		print ("Customers of a bank: ")
+		for i in self.customers:
+			i.print_data()
+
+
+
+if __name__ == "__main__":
+	person1 = Customer("PersonA", 2000)
+	person2 = Customer("PersonB", 150000)
+	person3 = Customer()
+
+	person1.print_data()
+	person2.print_data()
+	person3.print_data()
+
+
+	bank1 = Bank(person1, person2, person3)
+	bank1.print_customers_data()
+
+
+	person2.transfer_money(person1, 2000)
+
+	person1.print_data()
+	person2.print_data()
+	person3.print_data()
+
+	bank1.print_customers_data()
+
+
+
+
