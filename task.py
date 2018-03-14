@@ -46,6 +46,7 @@ class Bank:
 
 
 
+
 if __name__ == "__main__":
 	person1 = Customer("PersonA", 2000)
 	person2 = Customer("PersonB", 150000)
