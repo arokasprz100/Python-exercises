@@ -73,7 +73,19 @@ if __name__ == "__main__":
 	#testing matrices subtraction
 	matrix_7 = matrix_1 - matrix_1
 	matrix_7.print_matrix()
-	print() ##### TODO : finish
+	matrix_7 = matrix_1 - 2.0
+	matrix_7.print_matrix()
+	matrix_7 = matrix_1 - 2
+	matrix_7.print_matrix()
+	print()
+
+	#testing subtracting matrix from number
+	matrix_7 = 2.0 - matrix_1
+	matrix_7.print_matrix()
+	print()
+	matrix_7 = 2 - matrix_1
+	matrix_7.print_matrix()
+	print()
 
 
 
@@ -120,3 +132,9 @@ if __name__ == "__main__":
 	#testing static method 
 	print('We have {} Matrix instances.'.
 		format(Matrix.get_number_of_instances()))
+	print()
+
+
+	#testing adding with non operator methods
+	matrix_19 = matrix_14.add(matrix_15)
+	matrix_19.print_matrix()
