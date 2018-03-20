@@ -111,3 +111,8 @@ if __name__ == "__main__":
 	#testing adding with non operator methods
 	matrix_19 = matrix_14.add(matrix_15)
 	matrix_19.print_matrix()
+
+	#testing static constructing
+	matrix_20 = Matrix.construct(1,2,3,4)
+	print(matrix_20)
+	matrix_20.print_matrix()

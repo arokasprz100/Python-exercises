@@ -41,6 +41,12 @@ class Matrix:
 			raise ValueError ("Wrong matrices dimentions: {} is not equal {}".
 				format(lhs.dimention, rhs.dimention))
 
+	@staticmethod
+	def construct (*elems):
+		number_of_arguments = len(elems)
+		Matrix.check_number_of_arguments(number_of_arguments)
+		return Matrix(*elems)
+
 
 
 	def __init__ (self, *elements_of_matrix):
