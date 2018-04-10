@@ -1,1 +1,44 @@
-{"PKO BP": {"Anna Nowak": {"Money": 2000, "Password": "11111111"}, "Jan Kowalski": {"Money": 3000, "Password": "22222"}, "John Doe": {"Money": 10000, "Password": "33255fdlf"}}, "Bank Pekao": {"Bill Gates": {"Money": 10000000, "Password": "lolxd"}, "Bjarne Stroustrup": {"Money": 10000, "Password": "cpptemplate"}, "Gabe Newell": {"Money": 100000, "Password": "mypassword"}}, "Alior Bank": {"John Smith": {"Money": 1000, "Password": "1111"}, "Adam Sandler": {"Money": 10010, "Password": "amman"}, "Adam Miller": {"Money": 19000, "Password": "AdamMiller1111"}}}
+{
+    "Bank Pekao": {
+        "Gabe Newell": {
+            "Password": "mypassword",
+            "Money": 100000
+        },
+        "Bill Gates": {
+            "Password": "lolxd",
+            "Money": 10000000
+        },
+        "Bjarne Stroustrup": {
+            "Password": "cpptemplate",
+            "Money": 10000
+        }
+    },
+    "Alior Bank": {
+        "Adam Miller": {
+            "Password": "AdamMiller1111",
+            "Money": 19000
+        },
+        "Adam Sandler": {
+            "Password": "amman",
+            "Money": 10010
+        },
+        "John Smith": {
+            "Password": "1111",
+            "Money": 1000
+        }
+    },
+    "PKO BP": {
+        "John Doe": {
+            "Password": "33255fdlf",
+            "Money": 10000
+        },
+        "Anna Nowak": {
+            "Password": "11111111",
+            "Money": 2000
+        },
+        "Jan Kowalski": {
+            "Password": "22222",
+            "Money": 3000
+        }
+    }
+}
