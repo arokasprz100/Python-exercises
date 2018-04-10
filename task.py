@@ -80,8 +80,7 @@ def create_new_account(bank_network):
 		else: 
 			new_customer = {new_personal_data : {"Money" : new_money, "Password" : new_password}}
 			return new_customer, choosen_bank
-			bank_network[choosen_bank].update(new_customer)
-			break
+
 
 
 
