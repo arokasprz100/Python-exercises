@@ -248,36 +248,3 @@ if __name__ == "__main__":
 				except ValueError:
 					print ("One of these customers does not exist.")
 
-
-
-
-				
-
-		
-
-
-
-
-		'''
-
-		### Print account balance for one customer
-		elif user_input == 3:
-			customer_name = input ("Please enter customer's name: ")
-			customer_surname = input ("Please enter customer's surname: ")
-			customer = customer_name + " " + customer_surname
-			for bank in bank_network.items():
-				if customer in bank[1].keys():
-					print ("{}: {}".format(customer, bank[1][customer][0]))
-					break
-			else:
-				print ("There is no such customer in banking system")
-
-
-		'''
-
-# poprawic czytelnosc, optymalizacja
-#dodac wyswietlanie stanu konta jednego uzytkownika
-
-# dodac opisane opcje
-# pomyslec nad innymi opcjami
-# jakby starczylo czasu - dodac multithreading z randomowymi wplatami
